@@ -1,0 +1,322 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <meta charset="utf-8">
+      <title>Home</title>
+      <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+  	<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="css/bootsrap.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:#D1DAE5;">
+  <nav class="navbar navbar-default" >
+    <div class="container-fluid" style="background-color:#0099CC;">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" style="background-color:#0099CC; color:#000;">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="background-color:#0099CC; color:#fff;" href="#">Yatırım Yönetimi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" style="background-color:#0099CC; color:#fff;">Bildirimler</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color:#0099CC; color:#fff;">Yönetici <span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color:#0099CC; color:#fff;" >
+              <li><a href="#"><script language="javascript" src="http://is.sitekodlari.com/saat0.js"></script></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Profili düzenle</a></li>
+              <li><a href="#">Çıkış</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="list-group" style="position:absolute; overflow:hidden; width:253px; height:800; background-color:#3399CC;">
+  <a href="home.html" class="list-group-item " style="background-color:#3399CC; color:#fff">
+    Home
+  </a>
+  <a href="cevre.html" class="list-group-item active" style="background-color:#3399CC; color:#fff">Çevremdekiler</a>
+  <a href="harita.html" class="list-group-item" style="background-color:#3399CC; color:#fff">Harita Görünümü</a>
+
+<div class="list-group" style="background-color:#3399CC;">
+	<div class="row">
+		<div id="left" class="span3" style="background-color:#3399CC;">
+            <ul id="menu-group-1" class="nav menu">
+                <li class="item-1 deeper parent ">
+                    <a class="list-group-item" href="#" style="background-color:#3399CC; color:#fff">
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-1" class="sign" >Yatırımlar</span>
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-1" class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                    <ul class="children nav-child unstyled small collapse" id="sub-item-1">
+                        <li class="item-2 deeper parent ">
+                            <a class="" href="projeler.html">
+                              <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Tüm Projeler</span>
+                            </a>
+                        </li>
+                        <li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Konut Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Eğitim ve Spor Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Enerji Temin Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Madencilik Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Tarım Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">İmalat Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Turizm Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Sosyal Tesis Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Sağlık Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Ulaşım-Altyapı Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Diğer Kamu Hizmetleri(İktisadi,Sosyal)</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+				<li class="item-1 deeper parent">
+                    <a class="list-group-item" href="#" style="background-color:#3399CC; color:#fff">
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="sign">Sistem Yönetimi </span>
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                    <ul class="children nav-child unstyled small collapse" id="sub-item-9">
+                        <li class="item-2 deeper parent active">
+                            <a class="" href="yatirim_tur.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-2" class="sign"></span>
+                                <span class="lbl">Yatırım Türleri</span>
+                            </a>
+                        </li>
+                        <li class="item-5 deeper parent">
+                            <a class="" href="birim.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Birim Yönetimi</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="kullanici.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Kullanıcı Yönetimi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item-1 deeper parent">
+                    <a class="list-group-item" href="#" style="background-color:#3399CC; color:#fff">
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-8" class="sign">Yatırım Yönetimi</span>
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-8" class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                    <ul class="children nav-child unstyled small collapse" id="sub-item-8">
+                        <li class="item-9 deeper parent">
+                            <a class="" href="yatirim_ekle.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="sign"></span>
+                                <span class="lbl">Yatırım Ekle</span>
+                            </a>
+                        </li>
+                        <li class="item-12 deeper parent">
+                            <a class="" href="yatirim.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-12" class="sign"></span>
+                                <span class="lbl">Yatırım Listesi</span>
+                            </a>
+                        </li>
+						<li class="item-12 deeper parent">
+                            <a class="" href="kontrolor.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-12" class="sign"></span>
+                                <span class="lbl">Kontolör Atama Talepleri</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+		</div>
+	</div>
+</div>
+</div>
+<div style="position:absolute; overflow:hidden; left:200px; width:1100px; height:500;">
+<div class="label label-default" style="position:absolute; left:125px; width:300px; height:135px ">
+  <div class="tile tile-green">
+    <i class="material-icons" style="position:absolute; left:10px; top:37px; font-size:48px; ">people</i>
+    <div class="content" style="position:absolute; left:240px; top:33px;">
+      <h5 class="big">+7</h5>
+      <h5 class="title">Kullanıcı</h5>
+    </div>
+  </div>
+</div>
+<div class="label label-primary" style="position:absolute; left:440px; width:300px; height:135px ">
+  <div class="tile tile-orange">
+              <i class="material-icons" style="position:absolute; left:10px; top:37px; font-size:48px;">format_list_bulleted</i>
+  							<div class="content" style="position:absolute; left:240px; top:33px;">
+  								<h5 class="big">+74</h5>
+  								<h5 class="title">Yatırım</h5>
+  							</div>
+  						</div>
+</div>
+<div class="label label-success" style="position:absolute; left:755px; width:300px; height:135px ">
+  <div class="tile" style="position:absolute; text-align:left; top:25px;">
+  							<p style="font-size:16px"><span>Tamamlanan Yatırım Sayısı : </span><span style="font-weight:bold ; font-size:18px">4</span></p>
+  							<p style="font-size:16px"><span>Devam Eden Yatırım Sayısı : </span><span style="font-weight:bold ; font-size:18px">87</span></p>
+  							<p style="font-size:16px"><span>Planlanan Yatırım Sayısı : </span><span style="font-weight:bold ; font-size:18px">2</span></p>
+  						</div>
+</div>
+</div>
+<script>
+!function ($) {
+
+    // Le left-menu sign
+    /* for older jquery version
+    $('#left ul.nav li.parent > a > span.sign').click(function () {
+        $(this).find('i:first').toggleClass("icon-minus");
+    }); */
+
+    $(document).on("click","#left ul.nav li.parent > a > span.sign", function(){
+        $(this).find('i:first').toggleClass("icon-minus");
+    });
+
+    // Open Le current menu
+    $("#left ul.nav li.parent.active > a > span.sign").find('i:first').addClass("icon-minus");
+    $("#left ul.nav li.current").parents('ul.children').addClass("in");
+
+}(window.jQuery);
+</script>
+<div id="map" style=" left:260; top:140; width:1085px;" ></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: {lat: 38.024, lng: 35.887}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: 41.00527000, lng: 28.97696000},
+        {lat: 41.00000000, lng: 39.73333330},
+        {lat: 41.00527000, lng: 36.97696000},
+        {lat: 41.00000000, lng: 36.73333330},
+        {lat: 41.00527000, lng: 28.97696000},
+        {lat: 41.00000000, lng: 39.73333330},
+        {lat: 40.827111, lng: 39.73333},
+        {lat: 41.0048588, lng: 28.709834},
+		{lat: 40.827111, lng: 39.53333},
+        {lat: 41.0048588, lng: 28.609834},
+        {lat: 39.92077000, lng: 32.85411000},
+		{lat: 39.92077000, lng: 32.67411000},
+		{lat: 39.92077000, lng: 32.88411000},
+		{lat: 39.92077000, lng: 32.65411000},
+        {lat: 37.14766200, lng: 30.81787900},
+        {lat: 37.24766200, lng: 30.01787900},
+        {lat: 39.0766200, lng: 37.8787900},
+        {lat: 39.5766200, lng: 37.31787900},
+        {lat: 39.2766200, lng: 29.01787900},
+        {lat: 39.54766200, lng: 29.31787900},
+      ]
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqbKgSA3BecbKChKOH04i8AYzrmwaOmJo&callback=initMap">
+    </script>
+
+
+</body>
+</html>

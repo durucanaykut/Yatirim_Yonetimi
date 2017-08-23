@@ -1,0 +1,342 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <meta charset="utf-8">
+      <title>Home</title>
+      <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+  	<link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="css/bootsrap.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<body style="background-color:#D1DAE5;">
+  <nav class="navbar navbar-default" >
+    <div class="container-fluid" style="background-color:#0099CC;">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" style="background-color:#0099CC; color:#000;">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="background-color:#0099CC; color:#fff;" href="#">Yatırım Yönetimi</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" style="background-color:#0099CC; color:#fff;">Bildirimler</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color:#0099CC; color:#fff;">Yönetici <span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color:#0099CC; color:#fff;" >
+              <li><a href="#"><script language="javascript" src="http://is.sitekodlari.com/saat0.js"></script></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Profili düzenle</a></li>
+              <li><a href="#">Çıkış</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="list-group" style="position:absolute; overflow:hidden; width:253px; height:1250; background-color:#3399CC;">
+  <a href="home.html" class="list-group-item " style="background-color:#3399CC; color:#fff; border-color:#337ab7;">
+    Home
+  </a>
+  <a href="cevre.html" class="list-group-item " style="background-color:#3399CC; color:#fff; border-color:#337ab7;">Çevremdekiler</a>
+  <a href="harita.html" class="list-group-item " style="background-color:#3399CC; color:#fff; border-color:#337ab7;">Harita Görünümü</a>
+
+<div class="list-group" style="background-color:#3399CC;">
+	<div class="row">
+		<div id="left" class="span3" style="background-color:#3399CC;">
+            <ul id="menu-group-1" class="nav menu">
+                <li class="item-1 deeper parent ">
+                    <a class="list-group-item" href="#" style="background-color:#3399CC; color:#fff">
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-1" class="sign">Yatırımlar</span>
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-1" class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                    <ul class="children nav-child unstyled small collapse" id="sub-item-1">
+                        <li class="item-2 deeper parent">
+                            <a class="" href="projeler.html">
+                              <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Tüm Projeler</span>
+                            </a>
+                        </li>
+                        <li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Konut Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Eğitim ve Spor Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Enerji Temin Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Madencilik Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Tarım Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">İmalat Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Turizm Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Sosyal Tesis Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Sağlık Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Ulaşım-Altyapı Projeleri</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="peyzaj.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Diğer Kamu Hizmetleri(İktisadi,Sosyal)</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+				<li class="item-1 deeper parent">
+                    <a class="list-group-item active" href="#" style="background-color:#3399CC; color:#fff">
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="sign">Sistem Yönetimi </span>
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                    <ul class="children nav-child unstyled small collapse" id="sub-item-9">
+                        <li class="item-2 deeper parent ">
+                            <a class="" href="yatirim_tur.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-2" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Yatırım Türleri</span>
+                            </a>
+                        </li>
+                        <li class="item-5 deeper parent">
+                            <a class="" href="birim.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Birim Yönetimi</span>
+                            </a>
+                        </li>
+						<li class="item-5 deeper parent">
+                            <a class="" href="kullanici.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-5" class="sign"></span>
+                                <span class="lbl">Kullanıcı Yönetimi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item-1 deeper parent">
+                    <a class="list-group-item" href="#" style="background-color:#3399CC; color:#fff">
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-8" class="sign">Yatırım Yönetimi</span>
+                        <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-8" class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                    <ul class="children nav-child unstyled small collapse" id="sub-item-8">
+                        <li class="item-9 deeper parent">
+                            <a class="" href="yatirim_ekle.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-9" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Yatırım Ekle</span>
+                            </a>
+                        </li>
+                        <li class="item-12 deeper parent">
+                            <a class="" href="yatirim.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-12" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Yatırım Listesi</span>
+                            </a>
+                        </li>
+						<li class="item-12 deeper parent">
+                            <a class="" href="kontrolor.html">
+                                <span data-toggle="collapse" data-parent="#menu-group-1" href="#sub-item-12" class="sign"><i class="icon-plus icon-white"></i></span>
+                                <span class="lbl">Kontolör Atama Talepleri</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="page-title" >
+  <i class="material-icons" style="position:absolute; left:290px; top:67px; font-size:45px;">view_headline</i>
+				<div style="position:absolute; left:332px; top:50px;">
+
+					<h1><i class="fa fa-bars"></i>Yatırım Türü Yönetimi</h1>
+					<h4>Aşağıdaki formu ve listeyi kullanarak yatırım türlerinizi yönetebilirsiniz.</h4>
+				</div>
+			</div>
+
+      <div class="col-md-12" >
+      					<div class="box" style="position:absolute; left:290px; top:60px;  width:1000px;">
+                  <i class="material-icons" style="position:relative; top:48px; font-size:30px; color:white;">view_headline</i>
+      						<div class="box-title" style=" border:0.1px solid; color:white; background-color:#99CCFF;">
+      							<h3 style="position:relative; left:27px;"><i class="fa fa-bars"></i>Yatırım Türü Ekle</h3>
+      						</div>
+      						<div class="box-content" style="background-color:white; height:230px">
+      							<form action="#" class="form-horizontal" id="ekle-form" method="post" onsubmit="return false">
+      								<div class="form-group">
+      									<label class="col-sm-3 col-lg-2 control-label">İkon :</label>
+      									<div class="col-sm-6 col-lg-10 controls">
+      										<img src="img/icon/proje.png" alt="" style="size:20px;"><br><br>
+      										<select name="icon" id="icon" class="form-control">
+      											<option value="..">..</option><option value="icon-bilisim.png">icon-bilisim.png</option><option value="icon-bina.png">icon-bina.png</option><option value="icon-cevre.png">icon-cevre.png</option><option value="icon-egitim.png">icon-egitim.png</option><option value="icon-enerji.png">icon-enerji.png</option><option value="icon-icmesuyu.png">icon-icmesuyu.png</option><option value="icon-kanalizasyon.png">icon-kanalizasyon.png</option><option value="icon-kirsal.png">icon-kirsal.png</option><option value="icon-sosyal.png">icon-sosyal.png</option><option value="icon-turizm.png">icon-turizm.png</option><option value="icon-ulasim.png">icon-ulasim.png</option><option value="me-blue.gif">me-blue.gif</option><option value="me.gif">me.gif</option><option value="me.png">me.png</option><option value="plusbutton.jpg">plusbutton.jpg</option>										</select>
+      									</div>
+      								</div>
+      								<div class="form-group">
+      									<label class="col-sm-3 col-lg-2 control-label">Açıklama :</label>
+      									<div class="col-sm-6 col-lg-10 controls">
+      										<input type="text" name="aciklama" id="aciklama" class="form-control">
+      									</div>
+      								</div>
+      								<div class="form-group">
+      									<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2">
+      										<input type="submit" class="btn btn-success" value="Yatırım Ekle" onclick="ekle();">
+      									</div>
+      								</div>
+      							</form>
+      						</div>
+      					</div>
+      				</div>
+      <div class="row" >
+				<div class="col-md-12">
+					<div class="box" style="position:absolute; left:306px; top:370px;  width:1000px;">
+            <i class="material-icons" style="position:relative; top:48px; font-size:30px; color:white;">view_headline</i>
+						<div class="box-title" style=" border:0.1px solid; color:white; background-color:#99CCFF;">
+							<h3 style="position:relative; left:27px;"><i class="fa fa-bars"></i>Yatırım Türü Listesi</h3>
+						</div>
+						<div class="box-content" style="background-color:white;">
+							<div class="table-responsive" style="border: 0">
+								<table class="table Fill Head" id="sliderlistesi">
+									<thead>
+										<tr>
+											<th style="width:170px;">
+												İkon
+											</th>
+											<th>
+												Açıklama
+											</th>
+											<th style="width:70px;">
+											</th>
+										</tr>
+									</thead>
+                  <table>
+									<tbody>
+                      <tr rel="6"><td><img src="img/icon/icon-egitim.png" alt="" class="sliderthumnail"></td><td>Konut Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="7"><td><img src="img/icon/icon-egitim.png" alt="" class="sliderthumnail"></td><td>Eğitim ve Spor Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="8"><td><img src="img/icon/icon-enerji.png" alt="" class="sliderthumnail"></td><td>Enerji Temin Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="9"><td><img src="img/icon/icon-bina.png" alt="" class="sliderthumnail"></td><td>Madencilik Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="10"><td><img src="img/icon/icon-icmesuyu.png" alt="" class="sliderthumnail"></td><td>Tarım Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="11"><td><img src="img/icon/icon-kanalizasyon.png" alt="" class="sliderthumnail"></td><td>İmalat Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="17"><td><img src="img/icon/icon-bina.png" alt="" class="sliderthumnail"></td><td>Kentsel Dönüşüm</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="12"><td><img src="img/icon/icon-kirsal.png" alt="" class="sliderthumnail"></td><td>Turizm Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="13"><td><img src="img/icon/icon-sosyal.png" alt="" class="sliderthumnail"></td><td>Sosyal Tesis Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="14"><td><img src="img/icon/icon-turizm.png" alt="" class="sliderthumnail"></td><td>Turizm Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                      <tr rel="15"><td><img src="img/icon/icon-ulasim.png" alt="" class="sliderthumnail"></td><td>Ulaşım-Altyapı Projeleri</td>
+                        <td><a style="position:relative; top:20px; left:665px;"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a style="position:relative; top:20px; left:675px;"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+                  </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<script>
+!function ($) {
+
+    // Le left-menu sign
+    /* for older jquery version
+    $('#left ul.nav li.parent > a > span.sign').click(function () {
+        $(this).find('i:first').toggleClass("icon-minus");
+    }); */
+
+    $(document).on("click","#left ul.nav li.parent > a > span.sign", function(){
+        $(this).find('i:first').toggleClass("icon-minus");
+    });
+
+    // Open Le current menu
+    $("#left ul.nav li.parent.active > a > span.sign").find('i:first').addClass("icon-minus");
+    $("#left ul.nav li.current").parents('ul.children').addClass("in");
+
+}(window.jQuery);
+</script>
+
+</div>
+</body>
+</html>
